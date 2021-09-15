@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{25164951-b859-4706-b6a6-be93452a0fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Table">
+      <UniqueIdentifier>{2d8d02ea-a527-4205-8bcd-f6bc47edb507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Balanced Tree">
+      <UniqueIdentifier>{537949ff-3c39-4605-9849-860ec6068480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Balanced Tree\D+Tree">
+      <UniqueIdentifier>{725e21fe-bf14-4f6f-b925-b6b23987bcd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Balanced Tree\B+Tree">
+      <UniqueIdentifier>{db96634e-082b-453d-b90e-4991a3911432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Balanced Tree\BTree">
+      <UniqueIdentifier>{9f08ffc6-6a26-4cf0-94f9-7cbd36016167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Command Parser">
+      <UniqueIdentifier>{2bdd953b-62c2-46c0-980b-8a41cf9d7b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Command Parser\STokenizer">
+      <UniqueIdentifier>{ca893d3b-e82a-4d72-b069-8a6691991a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Command Parser\ParseTree">
+      <UniqueIdentifier>{60543e9d-202a-4bb5-9fd7-1960e98bfe61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database\Assist Functions">
+      <UniqueIdentifier>{0267d42d-6a4a-47f3-bed0-8efea9f5eb96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Database Final.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\database.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Table\datatable.cpp">
+      <Filter>Database\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Table\indexfile.cpp">
+      <Filter>Database\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Table\indexrecord.cpp">
+      <Filter>Database\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Table\indextree.cpp">
+      <Filter>Database\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\Table\record.cpp">
+      <Filter>Database\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\CommandParser\commandparser.cpp">
+      <Filter>Database\Command Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\CommandParser\STokenizer\stokenizer.cpp">
+      <Filter>Database\Command Parser\STokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\CommandParser\STokenizer\token.cpp">
+      <Filter>Database\Command Parser\STokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\CommandParser\ParseTree\parsetree.cpp">
+      <Filter>Database\Command Parser\ParseTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\AssistFunctions\file_assist_functions.cpp">
+      <Filter>Database\Assist Functions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBase\database.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\databuffer.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\datatable.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\indexfile.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\indexrecord.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\indextree.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\record.h">
+      <Filter>Database\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\array_assist_functions.h">
+      <Filter>Database\Balanced Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\index_pair.h">
+      <Filter>Database\Balanced Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\D+Tree\disk_bplus_functions.h">
+      <Filter>Database\Balanced Tree\D+Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\D+Tree\disk_bplustree.h">
+      <Filter>Database\Balanced Tree\D+Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\B+Tree\balanced_plus_tree_functions.h">
+      <Filter>Database\Balanced Tree\B+Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\B+Tree\bplustree.h">
+      <Filter>Database\Balanced Tree\B+Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\BTree\pair.h">
+      <Filter>Database\Balanced Tree\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\Table\BalancedTree\BTree\set.h">
+      <Filter>Database\Balanced Tree\BTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\commandparser.h">
+      <Filter>Database\Command Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\STokenizer\constants.h">
+      <Filter>Database\Command Parser\STokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\STokenizer\stokenizer.h">
+      <Filter>Database\Command Parser\STokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\STokenizer\token.h">
+      <Filter>Database\Command Parser\STokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\ParseTree\parse_tree_functions.h">
+      <Filter>Database\Command Parser\ParseTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\CommandParser\ParseTree\parsetree.h">
+      <Filter>Database\Command Parser\ParseTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\AssistFunctions\array2D_helper_functions.h">
+      <Filter>Database\Assist Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\AssistFunctions\file_assist_functions.h">
+      <Filter>Database\Assist Functions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
