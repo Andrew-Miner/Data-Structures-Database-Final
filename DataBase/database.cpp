@@ -284,22 +284,20 @@ void DataBase::select_table(PTree &cmd)
     }
 }
 
-// TODO: Fix Garbage Label/Goto code that was used for
-//       the sake of time. REPEAT: This is GARBAGE code.
 void DataBase::display_table(DataTable &table, bool is_temp)
 {
     // ResetBuffer Resets the block of records currently loaded
     // Within DataTable to the begining of the table
     table.resetBuffer();
 
-    // NOTE: Labels are used here in order to repeat the loop
-    //       While skipping the While Conditional Statement
+    // NOTE: skipConditional is used here to repeat the loop
+    //       while skipping the While Conditional Statement
     //       in order to avoid incrementing the DataBuffer.
-    //       There are much better ways of doing this same
-    //       thing.
+    bool skipConditional = false;
     do
     {
-so_were_using_labels_now:
+        skipConditional = false;
+
         if (system("CLS"))
             system("clear");
 
@@ -343,17 +341,17 @@ so_were_using_labels_now:
         if(answer == CMD_RESET)
         {
             table.resetBuffer();
-            goto so_were_using_labels_now;
+            skipConditional = true;
         }
         else if(answer == CMD_GOTO)
         {
             table.getBuffer()->readBlock(table.getBuffer()->size() * sizeof(Record) * (std::stoi(ans.getList(CONDITIONAL_ID).at(0)) - 1) + table.getStartingByte());
-            goto so_were_using_labels_now;
+            skipConditional = true;
         }
         else if(is_temp && answer == CMD_SAVE)
         {
             if(ans.getList(TABLE_ID).size() == 0)
-                goto so_were_using_labels_now;
+                skipConditional = true;
 
             std::cout << std::endl << " Saving Temporary Selection To Table: " << ans.getList(TABLE_ID).at(0) << std::endl << std::endl;
 
@@ -362,9 +360,9 @@ so_were_using_labels_now:
         else if(answer == CMD_EXIT)
             break;
         else if(answer != CMD_NEXT)
-            goto so_were_using_labels_now;
+            skipConditional = true;
 
-    } while(table.getBuffer()->readBlock());
+    } while(skipConditional || table.getBuffer()->readBlock());
 }
 
 void DataBase::insert_table(PTree &cmd)
