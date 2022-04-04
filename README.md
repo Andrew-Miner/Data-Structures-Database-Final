@@ -1,4 +1,4 @@
-# Data-Structures-DBMS-Final
+# Data Structures DBMS Final
 This project was created for the final of my Data Structures class. It is incomplete but went above and beyond the requirments of the class. The project implements a Database Management System that accepts SQL-like queries or commands. A Database consists of one or more Table objects stored on disk. A Table is made up rows and columns of data.
 
 There are 3 main components to this project. The [`Command Parser`](https://github.com/Andrew-Miner/Data-Structures-Database-Final/tree/main/DataBase/CommandParser) which parses and interprets database queries, the [`Tables`](https://github.com/Andrew-Miner/Data-Structures-Database-Final/tree/main/DataBase/Table) which organize and store data on disk, and the [`Database class`](https://github.com/Andrew-Miner/Data-Structures-Database-Final/blob/main/DataBase/database.h) which accepts parsed queries and retrieves data from or stores data to Tables.
